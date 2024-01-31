@@ -1,6 +1,7 @@
 /target/
 */target/**
 .settings/
+/data/
 */data/**
 
 
