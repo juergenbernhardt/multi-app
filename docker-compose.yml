@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  api-gateway:
+    image: multiapp/api-gateway
+    ports:
+      - "8080:8080"
+    links:
+      - grocery-list-app
+      - notes-app
+
+  grocery-list-app:
+    image: multiapp/grocery-list-app
+    ports:
+      - "8081:8081"
+
+  notes-app:
+    image: multiapp/notes-app
+    ports:
+      - "8082:8082"
