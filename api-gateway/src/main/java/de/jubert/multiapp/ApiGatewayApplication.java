@@ -17,7 +17,8 @@ public class ApiGatewayApplication {
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("grocery-list-app", r -> r.path("/grocery/**").uri("http://grocery-list-app:8081"))
-                .route("notes-app", r -> r.path("/notes/**").uri("http://notes-app:8082"))
+                .route("ingredient-app", r -> r.path("/ingredient/**").uri("http://ingredient-app:8082"))
+                .route("notes-app", r -> r.path("/notes/**").uri("http://notes-app:8083"))
                 .build();
     }
 

@@ -13,6 +13,7 @@
     <module>grocery-list-app</module>
     <module>notes-app</module>
     <module>api-gateway</module>
+    <module>ingredient-app</module>
   </modules>
 
   <name>multi-app-parent</name>

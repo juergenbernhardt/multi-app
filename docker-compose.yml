@@ -7,6 +7,7 @@ services:
       - "8080:8080"
     links:
       - grocery-list-app
+      - ingredient-app
       - notes-app
 
   grocery-list-app:
@@ -14,7 +15,12 @@ services:
     ports:
       - "8081:8081"
 
+  ingredient-app:
+    image: multiapp/ingredient-app
+    ports:
+      - "8082:8082"
+
   notes-app:
     image: multiapp/notes-app
     ports:
-      - "8082:8082"
+      - "8083:8083"

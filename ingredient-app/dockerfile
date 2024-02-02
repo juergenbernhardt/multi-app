@@ -1,0 +1,4 @@
+FROM eclipse-temurin:17-jdk-alpine
+COPY target/ingredient-app-1.0-SNAPSHOT.jar .
+CMD java -Xmx300m -Xms300m -jar ingredient-app-1.0-SNAPSHOT.jar
+EXPOSE 8082
